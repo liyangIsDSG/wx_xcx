@@ -1,0 +1,6 @@
+<template name="articleList">
+	<van-card desc="描述信息" title="{{item.value}}" thumb="{{ item.imgSrc? item.imgSrc:'' }}" />
+	<van-divider />
+</template>
+
+ <!-- wx:for="{{list}}" wx:for-index="key" wx:for-item="item" num="{{key}}" -->

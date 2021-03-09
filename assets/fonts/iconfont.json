@@ -1,0 +1,44 @@
+{
+  "id": "1819727",
+  "name": "wxfont",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13151403",
+      "name": "color_爱心",
+      "font_class": "color_aixin",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "14685870",
+      "name": "年度报告",
+      "font_class": "annual-report",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "14689195",
+      "name": "全球进步",
+      "font_class": "quanqiujinbu",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "14690028",
+      "name": "个人技能",
+      "font_class": "gerenjineng",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "14690249",
+      "name": "日程计划",
+      "font_class": "richengjihua",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

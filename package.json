@@ -1,0 +1,20 @@
+{
+  "name": "miniprogram-5",
+  "version": "1.0.0",
+  "description": "for vant",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  },
+  "keywords": [
+    "article"
+  ],
+  "author": "ly",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.6.8"
+  }
+}

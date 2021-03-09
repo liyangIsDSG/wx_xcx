@@ -1,0 +1,114 @@
+<!--pages/recordevent/recordevent.wxml-->
+<view class="editBox">
+	<!-- <view class="itemRow">
+		<view class="page__hd fs34">
+			事件
+		</view>
+		<view>No.{{eventId}} {{list[eventId-1].listName}}</view>
+	</view> -->
+
+  <i-cell-group>
+    <i-cell><i-icon type="createtask_fill" size="26" color="#1296db"  />事件</i-cell>
+    <i-cell>No.{{eventId}} {{list[eventId-1].listName}}</i-cell>
+  </i-cell-group>
+
+	<!-- <view class="itemRow">
+		<view class="page__hd fs34">
+			日期
+		</view>
+		<picker mode="date" value="{{date}}" start="{{2020-01-01}}" end="2099-03-18" bindchange="bindDateChange">
+			<view class="page__hd fs34">
+				选择: {{date}}
+			</view>
+		</picker>
+	</view> -->
+
+  <i-cell-group>
+    <i-cell ><i-icon type="clock_fill" size="26" color="#1296db"/> 日期 </i-cell>
+    <i-cell>
+      <picker mode="date" value="{{date}}" start="{{2020-01-01}}" end="2099-03-18" bindchange="bindDateChange">
+			  <view class="page__hd fs34">
+				选择: {{date}}
+			  </view>
+		  </picker>
+    </i-cell>
+  </i-cell-group>
+
+	<!-- <view class="itemRow">
+		<view class="page__hd fs34">
+			地点:
+		</view>
+		<view bindtap="chooseLocation">
+			<label for="myLocation" class="tickLocation" wx:if="{{!address}}">点击勾选地址</label>
+			<view bindtap="chooseLocation" id="myLocation">
+				{{address}}
+			</view>
+		</view>
+	</view> -->
+
+    <i-cell-group>
+    <i-cell><i-icon type="coordinates_fill" size="26" color="#1296db" />地点:</i-cell>
+    <i-cell><view bindtap="chooseLocation">
+			<label for="myLocation" class="tickLocation" wx:if="{{!address}}">点击勾选地址</label>
+			<view bindtap="chooseLocation" id="myLocation">
+				{{address}}
+			</view>
+		</view></i-cell>
+  </i-cell-group>
+
+	<!-- <view class="itemRow">
+		<view class="page__hd fs34">
+			幸福值
+		</view>
+		<view>
+			<star></star>
+		</view>
+	</view> -->
+
+    <i-cell-group>
+    <i-cell><i-icon type="like_fill" size="26" color="#1296db"/>幸福值</i-cell>
+    <i-cell>	<view>
+			<star></star>
+		</view></i-cell>
+  </i-cell-group>
+
+	<!-- 上传图片 -->
+	<!-- <view class="page">
+		<view class="page__hd fs34">
+			<view class="page__desc">时光</view>
+		</view>
+		<view class="page__bd fs34" style="border:1px solid red" bindtap="chooseImage">
+			<image src="{{tempImg}}"></image>
+		</view>
+	</view> -->
+
+   <i-cell-group>
+    <i-cell>
+  <i-icon type="editor" size="26" color="#1296db"/>
+    图片</i-cell>
+    <view class="page__bd fs34" style="border:1px solid red" bindtap="chooseImage">
+			<image src="{{tempImg}}"></image>
+		</view>
+  </i-cell-group>
+
+
+
+	<!-- 富文本编辑框 -->
+	<view>
+		<view class="page__hd fs34">
+			<view class="page__desc">小记</view>
+		</view>
+		<view>
+			<textarea placeholder="请在这儿填写哦！" auto-focus />
+		</view>
+</view>
+
+<i-button type="primary" bind:click="handleClick">提交</i-button>
+</view>
+
+  <!-- items 测试 -->
+<!-- <i-cell-group>
+    <i-cell title="只显示箭头" ></i-cell>
+    <i-cell title="跳转到首页"  ></i-cell>
+    <i-cell title="只有 footer 点击有效"   only-tap-footer></i-cell>
+</i-cell-group> -->

@@ -1,0 +1,7 @@
+<!--pages/onehundred/onehundred.wxml-->
+<view id="container">
+  <view class="listItem " wx:for="{{buketList}}" wx:key="index" data-type="{{index}}" bindtap="gorecord">
+    <text class="fs26"  data-type="{{index}}">{{item.listName}}</text>
+  </view>
+  <pop-menu class="menu"></pop-menu>
+</view>

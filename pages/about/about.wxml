@@ -1,0 +1,5 @@
+<!--pages/about/about.wxml-->
+<view>
+  <h1>李阳</h1>
+  <van-button type="primary">主要按钮</van-button>
+</view>

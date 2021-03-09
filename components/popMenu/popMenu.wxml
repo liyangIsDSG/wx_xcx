@@ -1,0 +1,9 @@
+<!--components/popMenu/popMenu.wxml-->
+
+<view>
+  <image src="../../images/menu/like.png" class="img-style" animation="{{animCollect}}" bindtap="collect"></image>
+  <image src="../../images/menu/share.png" class="img-style" animation="{{animTranspond}}" bindtap="transpond"></image>
+  <image src="../../images/menu/edit.png" class="img-style" animation="{{animInput}}" bindtap="input"></image>
+  <image src="../../images/menu/plus.png" class="img-plus-style" animation="{{animPlus}}" bindtap="plus"></image>
+</view>
+

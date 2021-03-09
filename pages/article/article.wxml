@@ -1,0 +1,13 @@
+<import src="../../template/articleList/articleList.wxml" />
+<page class="article_list_layout">
+	<view class="article_list_header">
+		<van-notice-bar scrollable text="技术是开发它的人的共同灵魂。" />
+	</view>
+	<view class="article_list_body">
+		<view class="article_list_scroll_content">
+			<view wx:for="{{list}}" wx:for-item="item"  wx:key="key">
+				<template is="articleList" data="{{item}}"></template>
+			</view>
+		</view>
+	</view>
+</page>
