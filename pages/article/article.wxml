@@ -5,8 +5,8 @@
 	</view>
 	<view class="article_list_body">
 		<view class="article_list_scroll_content">
-			<view wx:for="{{list}}" wx:for-item="item"  wx:key="key">
-				<template is="articleList" data="{{item}}"></template>
+			<view class="article_list_item" wx:for="{{list}}" wx:for-item="item"  wx:key="key">
+				<template is="articleList" data="{{item}}" class="article_content_item"></template>
 			</view>
 		</view>
 	</view>

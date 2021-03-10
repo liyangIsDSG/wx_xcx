@@ -1,0 +1,15 @@
+.van-card__content{
+  height: 47px !important;
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+}
+.van-divider {
+  margin: 0 !important;
+}
+.van-card__desc.list_desc{
+  line-height: 16px;
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+}
